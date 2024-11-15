@@ -1,5 +1,3 @@
-
-
 function Home() {
     return (
       <div className="min-h-screen bg-gradient-to-r from-slate-50 to-teal-300 flex flex-col items-center justify-center">
@@ -11,7 +9,7 @@ function Home() {
         
         <div className="flex flex-row w-full max-w-6xl space-x-6">
           
-          <div className="bg-white rounded-3xl p-8 shadow-lg w-1/2">
+          <div className="bg-white rounded-3xl mt-9 p-8 shadow-lg w-1/2">
             <p className="text-gray-700 text-lg">
              
               This section can be used for text, images, or interactive elements.
