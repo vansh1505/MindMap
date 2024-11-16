@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #BBDEFB, #90CAF9);
+    color: #333;
+    transition: background 0.5s ease-in-out;
+}
+
+#container {
+    width: 100%;
+    max-width: 400px;  /* Reduced the width */
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 1.2rem;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 1rem;
+    font-size: 1.6rem; /* Slightly reduced font size */
+    animation: slideDown 0.5s ease-in-out;
+}
+
+#op_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+input[type="number"] {
+    width: 70%;  /* Slightly reduced width */
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: 2px solid #90CAF9;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    text-align: center;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+    opacity: 0;
+    animation: slideIn 0.6s ease-in-out forwards;
+}
+
+input[type="number"]:focus {
+    border-color: #2196F3;
+    outline: none;
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #1976D2;
+    transform: scale(1.05);
+}
+
+p#result {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInResult 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInResult {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.plus{
+    font-size: 3rem;
+}
