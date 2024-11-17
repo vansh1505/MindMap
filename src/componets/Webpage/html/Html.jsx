@@ -1,6 +1,6 @@
 export default function Html() {
   return (
-    <>
+    <div>
         <h1>Web Devlopment Club, GTC</h1>
             <p>
                 The Web Development Club at GTC fosters innovation, creativity, and collaboration. We explore cutting-edge web
@@ -14,7 +14,7 @@ export default function Html() {
                 <li>Mind map Project</li>
             </ul>
             <footer>&copy 2024 all right reserved</footer>
-    </>
+    </div>
   );
 }
     
